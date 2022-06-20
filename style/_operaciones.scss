@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+background-color:bisque;
+}
+
+figcaption{
+    font-size: large;
+    font-family: sans-serif;
+}
+
+
+// each
+
+$dimension: 200px;
+
+@each $alguno in acemuk, actron, alplax{
+    .#{$alguno}-fondo{
+        width: $dimension*2;
+        height: $dimension;
+        background-image: 
+        url('../imagenes/#{$alguno}.png');
+        border: 4px solid black;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+
+// maps
+
+$redes: (
+    facebook: blue,
+    instagram: violet,
+    wpp: green,
+);
+
+@each $red, $color in $redes {
+    .btn--#{$red}{
+        background-color: $color;
+    }
+}
+
+// extend
+
+.caramelos{
+    border: 4px solid black;
+    border-radius: 50px;
+    background-color: red;
+
+}
+
+.caramelosBlandos{
+    @extend .caramelos;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: chocolate;
+}
+
+.caramelosRojos{
+    @extend .caramelos;
+    font-size: xx-small;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: end;
+    color: antiquewhite;
+}
+
+.caramelosDuros{
+    @extend .caramelos;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: start;
+    color: aqua;
+}
+
+// mixin
+
+@mixin sizes ($width, $height){
+    height: $height;
+    width: $width;
+}
+
+@mixin border ($radius, $color, $style){
+    border-radius: $radius;
+    border-color: $color;
+    border-style: $style;
+}
+
+.mixmix{
+@include sizes(300px, 300px);
+background-color: aquamarine;
+@include border(5px, red, dashed);
+}
+
+.mixmix2{
+    @include sizes(500px, 500px);
+background-color: rgb(92, 145, 57);
+@include border(10px, blue, solid);
+font-size: large;
+font-family: 'Times New Roman', Times, serif;
+}

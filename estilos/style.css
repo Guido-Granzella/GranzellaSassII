@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: bisque;
+}
+
+figcaption {
+  font-size: large;
+  font-family: sans-serif;
+}
+
+.acemuk-fondo {
+  width: 400px;
+  height: 200px;
+  background-image: url("../imagenes/acemuk.png");
+  border: 4px solid black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.actron-fondo {
+  width: 400px;
+  height: 200px;
+  background-image: url("../imagenes/actron.png");
+  border: 4px solid black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.alplax-fondo {
+  width: 400px;
+  height: 200px;
+  background-image: url("../imagenes/alplax.png");
+  border: 4px solid black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.btn--facebook {
+  background-color: blue;
+}
+
+.btn--instagram {
+  background-color: violet;
+}
+
+.btn--wpp {
+  background-color: green;
+}
+
+.caramelos, .caramelosBlandos, .caramelosRojos, .caramelosDuros {
+  border: 4px solid black;
+  border-radius: 50px;
+  background-color: red;
+}
+
+.caramelosBlandos {
+  font-size: xx-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: chocolate;
+}
+
+.caramelosRojos {
+  font-size: xx-small;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: end;
+  color: antiquewhite;
+}
+
+.caramelosDuros {
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: start;
+  color: aqua;
+}
+
+.mixmix {
+  height: 300px;
+  width: 300px;
+  background-color: aquamarine;
+  border-radius: 5px;
+  border-color: red;
+  border-style: dashed;
+}
+
+.mixmix2 {
+  height: 500px;
+  width: 500px;
+  background-color: #5c9139;
+  border-radius: 10px;
+  border-color: blue;
+  border-style: solid;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+}
